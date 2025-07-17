@@ -1,0 +1,8 @@
+services:
+  - type: worker
+    name: bot-telegram-ekrep
+    runtime: python
+    repo: https://github.com/Yopihermawan81/bot-telegram-ekrep
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python telegram_bot.py
